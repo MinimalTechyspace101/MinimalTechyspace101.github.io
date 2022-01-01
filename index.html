@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Techyspace101</title>
+  <title>Bootstrap Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Minimal Techyspace101</h1>
-    <p>Stay tuned for our upcoming posts on this website</p>
+
+<div class="jumbotron text-center ">
+  <h1>Minimal Techyspace101</h1>
+  <p>Your cozy space to get the best blog posts</p> 
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <p id="website-name">Minimal Techyspace101</p>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" id="about">
+      <h2>About Us</h2>
+      <h5>We beleive in providing the best content online for everyone</h5>
+      <div class="img-container">
+          <img src="../niche/about.svg" class="image" alt="about us svg">
+      </div>
+      <p>Empowering minds with the best articles all created by us only for you</p>
+      <h3 class="text-info">Additional info</h3>
+      <p>You can follow us on github if you want more updates related to our website.</p>
+      
+      <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+    <div class="col-sm-8">
+      <h2>A New Online Experience</h2>
+      <h5>Simple & effective</h5>
+      <div class="img-container">
+          <img src="../niche/for-homepage.svg" class="image" alt="butterfly svg image">
+      </div>
+      <p>Get started</p>
+      <p>At minimal Techyspace101 we want our visitors to get the best blog posts and quality posts without any issues and hassle. We want to help people with our content in their day to day life
+          and bring inspiration and innovation to every person in the world through our website.
+      </p>
+      <br>
+      <h2>Best place for reading for you</h2>
+      <h5>A better online solution</h5>
+      <div class="img-container">
+          <img src="../niche/welcome.svg" class="image" alt="shopping cart svg with glass and bubbles">
+      </div>
+      <p>Read like there's no tomorrow</p>
+      <p>Let's start exploring and reading with all new better and optimal approach.
+          <br>
+          If you have any questions related to our website please feel free to contact us on github we would like to get your feedback.
+<br>
+<br>
+          Thank you.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center">
+  <p id="contact">Contact us</p>
+
+  <div class="container">
+      <a href="https://minimaltechyspace101.github.io/"><i class="fa fa-github contact-link"></i></a>
+  </div>
+</div>
+
 </body>
 </html>
