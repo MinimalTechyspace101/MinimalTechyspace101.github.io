@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto&display=swap');
+:root {
+    --orelega: 'Orelega One', cursive;
+    --roboto: 'Roboto', sans-serif;
+    --font-huge: 1.3rem;
+    --phone-header: 24px;
+    --phone-read-font: 18px;
+    --lav-nav-light: #441fff;
+    --lav-nav-dark: #6600ff;
+    --origin-col: white;
+    --revorigin-col: #212121;
+    --btn-rad: 2px;
+    --gold-rush-alaska: #ffd678;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--roboto);
+    background-color: #f9f7ff;
+}
+h1 {
+    font-size: 32px;
+    margin: 16px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--lav-nav-light);
+    color: var(--origin-col);
+    height: 50px;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+header nav ul li {
+    display: inline;
+}
+.logo {
+    font-family: var(--orelega);
+    font-size: var(--font-huge);
+    padding: 7px 15px 7px 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--origin-col);
+    border-radius: var(--btn-rad);
+    background-color: rgba(255, 255, 255, .1);
+}
+.links {
+    color: var(--revorigin-col);
+    text-decoration: none;
+    background-color: var(--origin-col);
+    padding: 7px 15px 7px 15px;
+    margin: 0 5px;
+    letter-spacing: 0.5px;
+    border-radius: var(--btn-rad);
+    font-weight: 600;
+    font-size: 16px;
+    transition: font-size 100ms ease;
+}
+.links:hover {
+    font-size: .85rem;
+}
+.active {
+    background-color: var(--lav-nav-dark);
+}
+#click, #labelforclick {
+    display: none;
+}
+#share-span-text {
+    color: var(--revorigin-col);
+}
+#btn-share:hover {
+    color: red;
+}
+
+@media screen and (max-width: 767px) {
+    nav ul {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--lav-nav-dark);
+        top: 0;
+        transition: left 300ms ease;
+        left: calc(100vw / 1);
+        z-index: 1;
+    }
+    header nav ul li {
+        display: grid;
+        justify-content: center;
+    }
+    nav ul li:nth-child(1) {
+        margin-top: calc(100vh / 2.8);
+    } 
+    nav ul li:nth-child(2) {
+        margin-top: 8%;
+    } 
+    nav ul li:nth-child(3) {
+        margin-top: 8%;
+    } 
+    .links, .links:hover {
+        transition: none;
+        font-size: var(--phone-read-font);
+    }
+    .logo {
+        margin-left: calc(3.2vw / 2);
+        font-size: var(--phone-header);
+    }
+    .logo:hover {
+        background-color: transparent;
+    }
+    #click:checked ~ ul {
+        left: calc(100vw * 0);
+    }
+    #labelforclick {
+        display: block;
+        position: fixed;
+        right: 0;
+        margin-right: 5%;
+        z-index: 2;
+        padding: 3.5%;
+        background-color: var(--lav-nav-light);
+    }
+}

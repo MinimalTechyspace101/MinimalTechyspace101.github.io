@@ -1,0 +1,24 @@
+.fadeup {
+    position: relative;
+    animation: fadeup 1s;
+}
+@keyframes fadeup {
+    from {
+        bottom: -100vh;
+    }
+    to {
+        bottom: 0;
+    }
+}
+.faderight  {
+    position: relative;
+    animation: faderight 1s;
+}
+@keyframes faderight {
+    from {
+        right: 100%;
+    }
+    to {
+        right: 0;
+    }
+}

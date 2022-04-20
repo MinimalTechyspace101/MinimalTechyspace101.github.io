@@ -1,0 +1,42 @@
+.container {
+    background-color: var(--gold-rush-alaska);
+    color: var(--revorigin-col);
+    padding: 5%;
+    text-align: center;
+}
+.container p {
+    font-size: 2rem;
+}
+.link-content {
+    padding: 15%;
+    background-color: #fff2f2;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+.header-link a {
+    color: var(--revorigin-col);
+}
+.span-link-text {
+    color: #00ff91;
+    text-decoration: none;
+}
+.instagram {
+    background-color: #ff3381;
+}
+.instagram .header-link a {
+    color: var(--origin-col);
+}
+.link-content p {
+    color: var(--origin-col);
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .container p {
+        font-size: 21px;
+    }
+    .link-content p {
+        font-size: 21px;
+    }
+}
